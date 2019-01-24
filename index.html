@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    .pagebreak {
+      page-break-after: always;
+    }
+    @page {
+      size: auto;   /* auto is the current printer page size */
+      margin: 5px;  /* this affects the margin in the printer settings */
+    }
+    @media print {
+     margin: 1px;
+    }
+    body {
+      margin: 5px;
+      padding: 0px;
+    }
+    @font-face {
+      font-family: "Corsiva";
+      src: url(CorsivaMTStd.otf);
+    }
+    div.container {
+      width: 8.5in;
+    }
+    div.container.front table {
+      border: 1px solid #000000;
+      margin-right: auto;
+      margin-left: 8px;
+      margin-top: 11px;
+    }
+    div.container.back table {
+      border: 1px solid #888888;
+      margin-left: auto;
+      margin-right: 17px;
+      margin-top: 10px;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    td {
+      font-family: "Corsiva";
+      font-size:  14pt;
+      text-align: center;
+      vertical-align: middle;
+      width: 2in;
+      height: 2in;
+    }
+    .border-bottom {
+      border-bottom: 1px solid #888888;
+    }
+    .border-right {
+      border-right: 1px solid #888888;
+    }
+    .tear {
+      width: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container front">
+    <table>
+      <tr class="border-bottom">
+        <td contenteditable="true" class="border-right">
+          <div>
+            <img class="tear" src="images/amethystTear.png"/>
+            <img class="tear" src="images/aquaTear.png"/>
+            <img class="tear" src="images/blackTear.png"/>
+            <img class="tear" src="images/champagneTear.png"/><br/>
+            <img class="tear" src="images/garentTear.png"/>
+            <img class="tear" src="images/goldenYellowTear.png"/>
+            <img class="tear" src="images/greenTear.png"/>
+            <img class="tear" src="images/orangeTear.png"/><br/>
+            <img class="tear" src="images/pinkTear.png"/>
+            <img class="tear" src="images/topazTear.png"/>
+            <img class="tear" src="images/whiteTear.png"/>
+          </div>
+
+        </td>
+        <td contenteditable="true" class="border-right"></td>
+        <td contenteditable="true" class="border-right"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr class="border-bottom">
+        <td contenteditable="true" class="border-right"></td>
+        <td contenteditable="true" class="border-right"></td>
+        <td contenteditable="true" class="border-right"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="true" class="border-right"></td>
+        <td contenteditable="true" class="border-right"></td>
+        <td contenteditable="true" class="border-right"></td>
+        <td contenteditable="true"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="pagebreak"></div>
+  <div class="container back">
+    <table>
+      <tr class="border-bottom">
+        <td contenteditable="true" class="border-right"></td>
+        <td contenteditable="true" class="border-right"></td>
+        <td contenteditable="true" class="border-right"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr class="border-bottom">
+        <td contenteditable="true" class="border-right"></td>
+        <td contenteditable="true" class="border-right"></td>
+        <td contenteditable="true" class="border-right"></td>
+        <td contenteditable="true"></td>
+      </tr>
+      <tr>
+        <td contenteditable="true" class="border-right"></td>
+        <td contenteditable="true" class="border-right"></td>
+        <td contenteditable="true" class="border-right"></td>
+        <td contenteditable="true"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
